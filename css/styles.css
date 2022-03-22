@@ -1,0 +1,19 @@
+/* Error: expected "{".
+ *   ,
+ * 1 | <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Circles UI Kit</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/styles.css"></head><body class="container"><header class="row"><div class="col-3"><a class="link" href="/"><img class="img-logo" alt="circles logo" src="../images/logo.png"></a></div><div class="col-9"><nav class="nav"><a class="nav-link" href="#type">Typography</a><a class="nav-link" href="#buttons">Buttons</a><a class="nav-link" href="#forms">Form</a><a class="nav-link" href="#images">Images</a><a class="nav-link" href="#grid">Grid</a></nav></div></header><div class="row"><div class="col-12"><div class="card"><p>This is what the navigation menu looks like when the screen is at 768px or higher. When the screen is less than 768px,
+ *   |  ^
+ *   '
+ *   scss/utilities/_variables.scss 1:2  @import
+ *   scss/utilities/_index.scss 9:9      @import
+ *   scss/styles.scss 9:9                root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 1 \2502  <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Circles UI Kit</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/styles.css"></head><body class="container"><header class="row"><div class="col-3"><a class="link" href="/"><img class="img-logo" alt="circles logo" src="../images/logo.png"></a></div><div class="col-9"><nav class="nav"><a class="nav-link" href="#type">Typography</a><a class="nav-link" href="#buttons">Buttons</a><a class="nav-link" href="#forms">Form</a><a class="nav-link" href="#images">Images</a><a class="nav-link" href="#grid">Grid</a></nav></div></header><div class="row"><div class="col-12"><div class="card"><p>This is what the navigation menu looks like when the screen is at 768px or higher. When the screen is less than 768px,\a   \2502   ^\a   \2575 \a   scss/utilities/_variables.scss 1:2  @import\a   scss/utilities/_index.scss 9:9      @import\a   scss/styles.scss 9:9                root stylesheet';
+}
